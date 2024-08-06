@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "compile-scss": "sass sass/main.scss css/style.css --no-source-map"
+        "compile-scss": "sass --watch --update sass/main.scss css/style.css --no-source-map"
     },
     "author": "",
     "license": "ISC",
