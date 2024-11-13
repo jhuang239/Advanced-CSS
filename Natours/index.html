@@ -71,9 +71,33 @@
 
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="" class="composition__photo composition__photo--p1" />
+                            <img
+                                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 1"
+                                class="composition__photo composition__photo--p1"
+                                src="img/nat-1-large.jpg"
+                            />
+
+                            <img
+                                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 2"
+                                class="composition__photo composition__photo--p2"
+                                src="img/nat-2-large.jpg"
+                            />
+
+                            <img
+                                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 3"
+                                class="composition__photo composition__photo--p3"
+                                src="img/nat-3-large.jpg"
+                            />
+
+                            <!-- <img src="img/nat-1-large.jpg" alt="" class="composition__photo composition__photo--p1" />
                             <img src="img/nat-2-large.jpg" alt="" class="composition__photo composition__photo--p2" />
-                            <img src="img/nat-3-large.jpg" alt="" class="composition__photo composition__photo--p3" />
+                            <img src="img/nat-3-large.jpg" alt="" class="composition__photo composition__photo--p3" /> -->
                         </div>
                     </div>
                 </div>
@@ -318,6 +342,7 @@
                         srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
                         alt="Full logo"
                         class="footer__logo"
+                        src="img/logo-green-2x.png"
                     />
                 </picture>
             </div>
@@ -360,10 +385,6 @@
                         quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
                         rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
                         Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                        dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
-                        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-                        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
                     </p>
                     <a href="#" class="btn btn--green">Book now</a>
                 </div>
