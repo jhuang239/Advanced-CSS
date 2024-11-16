@@ -1,17 +1,24 @@
 {
-    "name": "natours",
+    "name": "trillo",
     "version": "1.0.0",
     "description": "Landing page for natours",
     "main": "index.js",
     "scripts": {
-        "compile-scss": "sass --watch --update sass/main.scss css/style.css --no-source-map"
+        "compile-scss": "sass --watch --update sass/main.scss css/style.css --no-source-map",
+        "prefix": "postcss --use autoprefixer -b 'last 2 versions' css/style.css -o css/style.prefix.css"
     },
     "author": "Jonas",
     "license": "ISC",
     "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.49",
+        "postcss-cli": "^11.0.0",
         "sass": "^1.77.8"
     },
-    "dependencies": {
-        "autoprefixer": "^10.4.20"
-    }
+    "browserslist": [
+        ">0.2%",
+        "last 2 versions",
+        "not dead",
+        "not ie <= 11"
+    ]
 }
