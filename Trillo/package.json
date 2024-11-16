@@ -1,0 +1,17 @@
+{
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "Landing page for natours",
+    "main": "index.js",
+    "scripts": {
+        "compile-scss": "sass --watch --update sass/main.scss css/style.css --no-source-map"
+    },
+    "author": "Jonas",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.77.8"
+    },
+    "dependencies": {
+        "autoprefixer": "^10.4.20"
+    }
+}
