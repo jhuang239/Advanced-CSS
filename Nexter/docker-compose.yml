@@ -14,9 +14,9 @@ services:
       - traefik.http.routers.nexter.tls.certresolver=cloudflare
       - traefik.http.routers.nexter.service=nexter
     networks:
-      - frontend
+      - traefik-net
     restart: unless-stopped
 
 networks:
-  frontend:
+  traefik-net:
     external: true

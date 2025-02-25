@@ -14,9 +14,9 @@ services:
       - traefik.http.routers.natours.tls.certresolver=cloudflare
       - traefik.http.routers.natours.service=natours
     networks:
-      - frontend
+      - traefik-net
     restart: unless-stopped
 
 networks:
-  frontend:
+  traefik-net:
     external: true

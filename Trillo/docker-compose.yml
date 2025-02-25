@@ -14,9 +14,9 @@ services:
       - traefik.http.routers.trillo.tls.certresolver=cloudflare
       - traefik.http.routers.trillo.service=trillo
     networks:
-      - frontend
+      - traefik-net
     restart: unless-stopped
 
 networks:
-  frontend:
+  traefik-net:
     external: true
