@@ -1,7 +1,7 @@
 services:
   nginx:
     image: docker.io/library/nginx:1.27.4-alpine
-    container_name: natours-nginx
+    container_name: natours
     volumes:
       - ./config/default.conf:/etc/nginx/conf.d/default.conf:ro
       - ./data:/usr/share/nginx/html:ro
@@ -12,7 +12,7 @@ services:
       - traefik.http.routers.natours.entrypoints=websecure
       - traefik.http.routers.natours.tls=true
       - traefik.http.routers.natours.tls.certresolver=cloudflare
-      - traefik.http.routers.natours.service=natours-nginx
+      - traefik.http.routers.natours.service=natours
     networks:
       - frontend
     restart: unless-stopped
