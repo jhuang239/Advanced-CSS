@@ -12,7 +12,7 @@ services:
       - traefik.http.routers.trillo.entrypoints=websecure
       - traefik.http.routers.trillo.tls=true
       - traefik.http.routers.trillo.tls.certresolver=cloudflare
-      - traefik.http.routers.trillo.service=trillo
+      - traefik.http.routers.trillo.service=trillo-nginx
     networks:
       - frontend
     restart: unless-stopped

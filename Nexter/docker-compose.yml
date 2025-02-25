@@ -12,7 +12,7 @@ services:
       - traefik.http.routers.nexter.entrypoints=websecure
       - traefik.http.routers.nexter.tls=true
       - traefik.http.routers.nexter.tls.certresolver=cloudflare
-      - traefik.http.routers.nexter.service=nexter
+      - traefik.http.routers.nexter.service=nexter-nginx
     networks:
       - frontend
     restart: unless-stopped

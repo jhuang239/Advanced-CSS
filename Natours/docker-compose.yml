@@ -12,7 +12,7 @@ services:
       - traefik.http.routers.natours.entrypoints=websecure
       - traefik.http.routers.natours.tls=true
       - traefik.http.routers.natours.tls.certresolver=cloudflare
-      - traefik.http.routers.natours.service=natours
+      - traefik.http.routers.natours.service=natours-nginx
     networks:
       - frontend
     restart: unless-stopped
